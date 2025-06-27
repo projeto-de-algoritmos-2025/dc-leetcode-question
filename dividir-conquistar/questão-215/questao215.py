@@ -23,3 +23,22 @@ class Solution:
                 return select(highs, k - len(lows) - len(pivots))
 
         return select(nums, len(nums) - k)
+
+
+def interativo():
+    print("=== Encontrar o k-ésimo maior elemento ===")
+    entrada = input("Digite a lista de números separada por vírgula (ex: 3,2,1,5,6,4): ")
+    try:
+        nums = list(map(int, entrada.strip().split(',')))
+        k = int(input("Digite o valor de k (ex: 2): "))
+        if k < 1 or k > len(nums):
+            print("⚠️  Valor de k inválido.")
+            return
+        sol = Solution()
+        resultado = sol.findKthLargest(nums, k)
+        print(f"\n✅ O {k}-ésimo maior elemento é: {resultado}")
+    except ValueError:
+        print("❌ Entrada inválida. Certifique-se de usar apenas números inteiros.")
+
+if __name__ == "__main__":
+    interativo()
