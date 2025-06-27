@@ -18,7 +18,6 @@ class Solution:
             i = j = 0
             while i < len(left) or j < len(right):
                 if j == len(right) or (i < len(left) and left[i][1] <= right[j][1]):
-
                     result[left[i][0]] += j
                     merged.append(left[i])
                     i += 1
@@ -31,3 +30,18 @@ class Solution:
 
         merge_sort(0, n)
         return result
+
+
+def interativo():
+    print("=== Contador de elementos menores à direita ===")
+    entrada = input("Digite a lista de números separada por vírgula (ex: 5,2,6,1): ")
+    try:
+        nums = list(map(int, entrada.strip().split(',')))
+        sol = Solution()
+        resultado = sol.countSmaller(nums)
+        print(f"\n✅ Resultado: {resultado}")
+    except ValueError:
+        print("❌ Entrada inválida. Certifique-se de digitar apenas números inteiros separados por vírgula.")
+
+if __name__ == "__main__":
+    interativo()
