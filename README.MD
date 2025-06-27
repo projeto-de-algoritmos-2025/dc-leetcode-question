@@ -17,8 +17,12 @@ Nesta etapa do semestre trabalhamos em cima de algoritmos de dividir e conquista
 ## Screenshots
 
 ![Questão 315](./dividir-conquistar/Questão-315/questao315.png)
+
 ![Questão 215](./dividir-conquistar/Questão-215/questao215.png)
 
+![Questão 23](./dividir-conquistar/Questão-23/questao23.png)
+
+![Questão 347](./dividir-conquistar/Questão-347/questao347.png)
 
 ## Vídeo da entrega
 
